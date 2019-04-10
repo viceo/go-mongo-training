@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mongo:
+    image: 'mongo'
+  main:
+    volumes:
+      - .:/go/src/app/github.com/viceo/go-mongodb
+    build: .
